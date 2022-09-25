@@ -1,0 +1,60 @@
+{% extends "agency/base.html" %}
+{% load static %}
+
+{% block title %}
+	Estates
+{% endblock %}
+
+{% block content %}
+	<div id="main" class="estate-list">
+		<p class="estates_panel_header">Estates:</p>
+		{% for estate in estates %}
+			<div class="item">
+				<a href="{{ estate.get_absolute_url }}">
+					<img class="estate_detail_image" src="{% if estate.image1 %}{{ estate.image1.url }}{% else %}{% static "img/no_image.png" %}{% endif %}">
+				</a>
+				<a href="{{ estate.get_absolute_url }}">{{ estate.name }}</a><br>
+				<div>
+					Estate price: {{ estate.price }} $ <br>
+					City: {{ estate.city }} <br>
+					District: {{ estate.district }} <br>
+					Address: {{ estate.adress }} <br>
+					Area: {{ estate.area }} sq ft <br>
+				</div>
+			</div>
+		{% endfor %}
+	</div>
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

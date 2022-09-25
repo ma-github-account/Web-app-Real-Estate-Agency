@@ -1,0 +1,132 @@
+@import url(//fonts.googleapis.com/css?family=Ubuntu);
+
+body {
+    margin:0;
+    padding:0;
+    font-family:helvetica, sans-serif;
+}
+
+h1, h2, h3, h4, h5 , h6 {
+    font-family: 'Ubuntu', sans-serif; font-weight:normal;
+}
+
+a {
+    text-decoration:none;
+    color:#5993bb;
+}
+
+a:hover {
+    color:#77b6e2;
+}
+
+#header {
+    padding:10px 100px;
+    font-size:18px;
+    overflow:auto;
+}
+
+#subheader {
+    background:#ececec;
+    color:#444;
+    padding:15px 100px;
+    overflow:auto;
+}
+
+#header .logo {
+    font-family: 'Ubuntu', sans-serif;
+    float:left;
+    color:#333;
+    font-size:32px;
+    margin-right:10%;
+}
+
+#content {
+    padding:0 100px;
+    overflow:hidden;
+}
+
+#sidebar {
+    width:220px;
+    padding:30px 20px 0 0;
+    float:left;
+}
+
+#main {
+    float:left;
+    width: 96%;
+    margin-right:-220px;
+    overflow:hidden;
+}
+
+.estate-list .estates_panel_header {
+    width:100%;
+    padding:10px 20px 10px 0;
+    float:left;
+    text-align:left;
+    font-size:25px;
+}
+
+.estate-list .item {
+    width:100%;
+    padding:10px 20px 10px 0;
+    float:left;
+    text-align:left;
+    line-height:1.5;
+    font-size:25px;
+}
+
+.estate-list .item img {
+    width:25%;
+    margin-bottom:8px;
+    margin-right:18px;
+    float:left;
+}
+
+.estate-detail {
+    text-align:justify;
+}
+
+.estate-detail .price {
+    color:#333;
+    font-size:20px;
+}
+
+.estate-detail .gallery {
+    width:100%;
+}
+
+.estate-detail .agency_contact {
+    width:100%;
+}
+
+.estate-detail .agency_contact img {
+    width:220px;
+    height:220px;
+}
+
+.estate-detail img {
+    width:32%;
+    height: 350px;
+    float:left;
+    padding:0 20px 20px 0;
+}
+
+.estate-detail h1 {
+    margin-bottom:0;
+}
+
+.estate-detail h2 {
+    margin-top:10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+

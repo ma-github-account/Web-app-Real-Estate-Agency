@@ -1,0 +1,98 @@
+{% extends "agency/base.html" %}
+{% load static %}
+
+{% block title %}
+	Estates
+{% endblock %}
+
+{% block content %}
+	<div class="estate-detail">
+
+
+		<p class="price"> Estate: {{ estate.name }} </p>
+		
+		
+		<!--<img src="{% if estate.employee.image %}{{ estate.employee.image.url }}{% else %}{% static "img/no_image.png" %}{% endif %}">-->
+
+		<p class="price"> Price: {{ estate.price }} $</p>
+
+		<p class="price">City: {{ estate.city }}</p>
+
+		<p class="price">District: {{ estate.district }}</p>
+
+		<p class="price">Address: {{ estate.adress }}</p>
+
+		<p class="price">Area: {{ estate.area }} sq ft</p>
+
+		<p class="price">Description: {{ estate.description }}</p>
+
+
+
+
+		<p class="price"> Gallery:</p>
+
+		<div class="gallery">
+			<img src="{% if estate.image1 %}{{ estate.image1.url }}{% else %}
+			{% static "img/no_image.png" %}{% endif %}">
+			<img src="{% if estate.image2 %}{{ estate.image2.url }}{% else %}
+			{% static "img/no_image.png" %}{% endif %}">
+			<img src="{% if estate.image3 %}{{ estate.image3.url }}{% else %}
+			{% static "img/no_image.png" %}{% endif %}">
+		</div>
+
+		<br>
+
+		<p class="price"> Agency contact:</p>
+
+		<div class="agency_contact">
+
+			<p class="price">{{ estate.employee }}</p>
+	
+			<p class="price"><a href = "mailto: {{ estate.employee.mail }}">{{ estate.employee.mail }}</a></p>
+	
+			<p class="price"> tel {{ estate.employee.phone }}</p>
+
+			<img class="employee_photo_in_detail_view" src="{% if estate.employee.image %}{{ estate.employee.image.url }}{% else %}{% static "img/no_image.png" %}{% endif %}">	
+		
+
+			<p></p>
+	
+
+		</div>
+
+	</div>
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
