@@ -6,7 +6,10 @@ Prerequisites:
 - Django 4.0.6,
 - Pillow 7.0.0 (pip install Pillow==7.0.0)
 
-How to run: python manage.py runserver
+How to run:
+1.python manage.py makemigrations
+2.python manage.py migrate
+3.python manage.py runserver
 
 
 
