@@ -7,7 +7,6 @@ Prerequisites:
 - Pillow 7.0.0 (pip install Pillow==7.0.0)
 
 How to run:
-
 1.python manage.py makemigrations
 2.python manage.py migrate
 3.python manage.py runserver
